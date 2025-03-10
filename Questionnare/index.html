@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="súbor.css">
+    <title>Survey</title>
+</head>
+<body>
+    <img src="https://img.freepik.com/free-vector/doctors-concept-illustration_114360-1515.jpg?t=st=1732035726~exp=1732039326~hmac=ea5268a237070225adb9553122cc337f67de54e435ae6baa4e6bfa93267f91b4&w=826" 
+        alt="image of doctors" width="300" height="200" id="doctor_picture">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="XXXXXXXXXXXXXXXXXXXXXXXXXX">
+        
+        <div class="box">
+            <h1>Tell us about your experience with the medication!</h1>
+            <p>This form allows you to share your opinions and experiences with medications you have used.
+                It will help other users make informed decisions about medications that might best suit their needs. 
+                Please fill in all the relevant information to write the best possible review.</p>
+        </div>
+        
+        <div class="box bigger_box">
+            <h4>Select the medication that you've used:</h4>
+            <select id="medication" name="Name of medication">
+                <option value="Panadol - Paracetamol">Panadol - (Paracetamol)</option>
+                <option value="Brufen - Ibuprofen">Brufen - (Ibuprofen)</option>
+                <option value="Aspirin - Acetylsalicylic Acid">Aspirin - (Acetylsalicylic Acid)</option>
+                <option value="Voltaren - Diclofenac">Voltaren - (Diclofenac)</option>
+                <option value="Augmentin - Amoxicillin + Clavulanic Acid">Augmentin - (Amoxicillin + Clavulanic Acid)</option>
+                <option value="Zyrtec - Cetirizine">Zyrtec - (Cetirizine)</option>
+                <option value="Nurofen - Ibuprofen">Nurofen - (Ibuprofen)</option>
+                <option value="Mucosolvan - Ambroxol">Mucosolvan - (Ambroxol)</option>
+                <option value="Loratadine - Loratadine">Loratadine - (Loratadine)</option>
+                <option value="Xanax - Alprazolam">Xanax - (Alprazolam)</option>
+                <option value="Detralex - Flavonoids">Detralex - (Flavonoids)</option>
+                <option value="No-Spa - Drotaverine">No-Spa - (Drotaverine)</option>
+                <option value="Sinupret - Herbal Extracts">Sinupret - (Herbal Extracts)</option>
+                <option value="Paralen - Paracetamol">Paralen - (Paracetamol)</option>
+                <option value="Milgamma - Vitamin B1, B6, B12">Milgamma - (Vitamin B1, B6, B12)</option>
+                <option value="Heparoid - Sodium Heparin">Heparoid - (Sodium Heparin)</option>
+                <option value="Imodium - Loperamide">Imodium - (Loperamide)</option>
+                <option value="Fenistil - Dimetindene">Fenistil - (Dimetindene)</option>
+                <option value="Ibalgin - Ibuprofen">Ibalgin - (Ibuprofen)</option>
+                <option value="Aflamil - Aceclofenac">Aflamil - (Aceclofenac)</option>
+            </select>
+        </div>
+        
+        <div class="box bigger_box">
+            <h4>What symptoms or health issues did you use this medication for?</h4>
+            <textarea id="liekPouzitie" name="Symptoms the patient tried to cure" rows="5" cols="90" 
+                placeholder="Describe the symptoms or health problems you intended to treat with this medication."></textarea>       
+        </div>
+        
+        <div class="box bigger_box">
+            <h4>Rate this medication on a scale from 1 to 5:</h4>
+            <div class="rating-options">
+                <span class="rating-label">Very poor</span>
+                <div class="rating-buttons">
+                    <label>
+                        <input type="radio" name="Rating (1-5)" value="1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="Rating (1-5)" value="2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="Rating (1-5)" value="3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="Rating (1-5)" value="4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="Rating (1-5)" value="5">
+                        <span>5</span>
+                    </label>
+                </div>
+                <span class="rating-label">Excellent</span>
+            </div>  
+        </div>
+        
+        <div class="box bigger_box">
+            <h4>What were the reasons for the specific rating? Were there any side effects?</h4>
+            <textarea id="reasons_for_rating" name="Reasons for specific rating" rows="5" cols="90" 
+                placeholder="Describe why you've rated the medication the way you did."></textarea>       
+        </div>
+        
+        <div class="box">
+            <h4>Would you recommend this medication to others?</h4>
+            <div class="rating-unique">
+                <div class="rating-buttons unique_button">
+                    <label>
+                        <input type="radio" name="Would reccomend (Yes/No)" value="yes">
+                        <span>YES</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="Would reccomend (Yes/No)" value="no">
+                        <span>NO</span>
+                    </label> 
+                </div>
+            </div> 
+        </div>
+        
+        <div class="box bigger_box">
+            <h4>Please explain why would you recommend or not recommend this medication:</h4>
+            <textarea id="details_recommendation" name="Details for recommendation" rows="5" cols="90" 
+                placeholder="Please explain why you would or would not recommend this medication."></textarea> 
+        </div>
+        
+        <button class="button-contact" type="submit" role="button">SUBMIT</button>
+    </form>
+</body>
+</html>
